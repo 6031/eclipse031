@@ -80,6 +80,10 @@
         name="org.eclipse.jdt.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/content_assist_favorite_static_members"
+          value="org.hamcrest.Matchers.*;org.hamcrest.MatcherAssert.*;org.junit.Assert.*"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/formatter_profile"
           value="_6.031"/>
       <setupTask
