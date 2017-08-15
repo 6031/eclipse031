@@ -34,6 +34,11 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.fieldHiding"
+          value="info"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.indirectStaticAccess"
           value="info"/>
       <setupTask
@@ -46,6 +51,11 @@
           excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.invalidJavadocTags"
           value="enabled"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.localVariableHiding"
+          value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
@@ -66,6 +76,11 @@
           excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocTags"
           value="warning"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingOverrideAnnotation"
+          value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"

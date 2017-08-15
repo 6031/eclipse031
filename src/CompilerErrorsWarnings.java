@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 class CodeStyle {
 
@@ -187,8 +189,41 @@ class PotentialProgrammingProblems {
     }
 }
 
-class NameShadowingAndConflicts {
-    // TODO
+class NameShadowingAndConflicts<TypeParam> {
+
+    int instanceField;
+
+    NameShadowingAndConflicts() {
+        // empty
+    }
+
+    class FieldDeclarationHidesAnotherFieldOrVariable extends NameShadowingAndConflicts<String> {
+
+        int instanceField;
+    }
+
+    void localVariableDeclarationHidesAnotherFieldOrVariable() {
+        int instanceField = 5;
+        System.out.println(instanceField);
+    }
+
+    // localVariableDeclarationHidesAnotherFieldOrVariable constructor parameter
+    public NameShadowingAndConflicts(int instanceField) {
+        System.out.println(instanceField);
+    }
+
+    class TypeParameterHidesAnotherType<TypeParam> extends NameShadowingAndConflicts<String> {
+        // empty
+    }
+
+    void methodDoesNotOverridePackageVisibleMethod() {
+        // TODO
+    }
+
+    interface InterfaceMethodConflictsWithProtectedObjectMethod {
+
+        Object clone() throws IOException;
+    }
 }
 
 class DeprecatedAndRestrictedAPI {
@@ -200,10 +235,28 @@ class UnnecessaryCode {
 }
 
 class GenericTypes {
+
     // TODO
+
+    void redundantTypeArguments() {
+        List<String> list = new ArrayList<String>();
+        System.out.println(list);
+    }
 }
 
 class Annotations {
+
+    class MissingOverrideAnnotation implements Runnable {
+
+        public String toString() {
+            return null;
+        }
+
+        public void run() {
+            // empty
+        }
+    }
+
     // TODO
 }
 
