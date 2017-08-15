@@ -28,50 +28,62 @@
         name="org.eclipse.jdt.core">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.emptyStatement"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.indirectStaticAccess"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.invalidJavadoc"
           value="warning"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.invalidJavadocTags"
           value="enabled"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingHashCodeMethod"
           value="warning"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocComments"
           value="warning"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocTagDescription"
           value="all_standard_tags"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocTags"
           value="warning"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingSynchronizedOnInheritedMethod"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.parameterAssignment"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.possibleAccidentalBooleanAssignment"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.reportMethodCanBeStatic"
           value="info"/>
     </setupTask>
@@ -80,18 +92,22 @@
         name="org.eclipse.jdt.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.ui/content_assist_favorite_static_members"
           value="org.hamcrest.Matchers.*;org.hamcrest.MatcherAssert.*;org.junit.Assert.*"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.ui/formatter_profile"
           value="_6.031"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.ui/formatter_settings_version"
           value="13"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.formatterprofiles">
         <annotation
             source="http://www.eclipse.org/oomph/setup/FeatureSubstitution">
@@ -422,6 +438,7 @@
         name="org.eclipse.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui/showIntro"
           value="false"/>
     </setupTask>
@@ -430,6 +447,7 @@
         name="org.eclipse.ui.browser">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui.browser/browser-choice"
           value="1"/>
     </setupTask>
@@ -438,6 +456,7 @@
         name="org.eclipse.ui.editors">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui.editors/spacesForTabs"
           value="true"/>
     </setupTask>
@@ -446,10 +465,12 @@
         name="org.eclipse.ui.ide">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui.ide/REFRESH_WORKSPACE_ON_STARTUP"
           value="true"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui.ide/unassociatedEditorStrategy"
           value="org.eclipse.ui.ide.askUserForUnassociatedEditor"/>
     </setupTask>
@@ -458,6 +479,7 @@
         name="org.eclipse.wst.xml.core">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.wst.xml.core/indentationChar"
           value="space"/>
     </setupTask>
@@ -467,6 +489,7 @@
       requiredJavaVersion="1.8">
     <setupTask
         xsi:type="setup.p2:P2Task"
+        excludedTriggers="STARTUP"
         label="${scope.product.label} (${scope.product.version.label})"
         licenseConfirmationDisabled="true">
       <requirement
