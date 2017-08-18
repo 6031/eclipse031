@@ -522,12 +522,15 @@
       <requirement
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
       <requirement
-          name="constellation.feature.feature.group"
-          versionRange="0.2.3"/>
+          name="constellation.feature.feature.group"/>
+      <requirement
+          name="edu.mit.eecs.javatutor.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/oxygen"/>
       <repository
           url="https://constellation.csail.mit.edu/install"/>
+      <repository
+          url="http://javatutor.csail.mit.edu/"/>
     </setupTask>
     <description>Eclipse Oxygen for 6.031.</description>
   </version>
