@@ -522,6 +522,8 @@
       <requirement
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
       <requirement
+          name="org.eclipse.ui.views.log"/>
+      <requirement
           name="constellation.feature.feature.group"/>
       <requirement
           name="edu.mit.eecs.javatutor.feature.group"/>
