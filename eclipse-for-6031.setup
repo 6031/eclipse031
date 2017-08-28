@@ -64,11 +64,6 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocComments"
-          value="warning"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocTagDescription"
           value="all_standard_tags"/>
       <setupTask
