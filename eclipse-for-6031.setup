@@ -64,27 +64,12 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocTagDescription"
-          value="all_standard_tags"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          excludedTriggers="STARTUP"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingJavadocTags"
-          value="warning"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingOverrideAnnotation"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingSynchronizedOnInheritedMethod"
-          value="info"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          excludedTriggers="STARTUP"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.parameterAssignment"
           value="info"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
