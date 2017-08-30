@@ -69,6 +69,11 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingOverrideAnnotationForInterfaceMethodImplementation"
+          value="disabled"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingSynchronizedOnInheritedMethod"
           value="info"/>
       <setupTask
