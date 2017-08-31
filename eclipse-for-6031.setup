@@ -74,6 +74,11 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingSerialVersion"
+          value="ignore"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.missingSynchronizedOnInheritedMethod"
           value="info"/>
       <setupTask
