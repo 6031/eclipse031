@@ -489,6 +489,26 @@
           value="space"/>
     </setupTask>
   </setupTask>
+  <setupTask
+      xsi:type="setup:ResourceCreationTask"
+      excludedTriggers="BOOTSTRAP STARTUP"
+      content=""
+      targetURL="${osgi.instance.area|trimTrailingSlashes}/.metadata/.plugins/net.sf.eclipsecs.core/checkstyle-config.xml">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/FeatureSubstitution">
+      <detail
+          key="content">
+        <value>
+          &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+          &lt;checkstyle-configurations file-format-version=&quot;5.0.0&quot; default-check-configuration=&quot;6.031 Caesar&quot;>
+            &lt;check-configuration name=&quot;6.031 Caesar&quot; location=&quot;https://raw.githubusercontent.com/rcmiller/caesar-at-mit/master/preprocessor/checks.xml&quot; type=&quot;remote&quot; description=&quot;Configuration used for 6.031 code reviewing.&quot;>
+              &lt;additional-data name=&quot;cache-file&quot; value=&quot;false&quot;/>
+            &lt;/check-configuration>
+          &lt;/checkstyle-configurations>
+        </value>
+      </detail>
+    </annotation>
+  </setupTask>
   <version name="oxygen"
       label="Oxygen"
       requiredJavaVersion="1.8">
@@ -514,11 +534,15 @@
       <requirement
           name="org.eclipse.ui.views.log"/>
       <requirement
+          name="net.sf.eclipsecs.feature.group"/>
+      <requirement
           name="constellation.feature.feature.group"/>
       <requirement
           name="edu.mit.eecs.javatutor.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/oxygen"/>
+      <repository
+          url="http://eclipse-cs.sourceforge.net/update"/>
       <repository
           url="https://constellation.csail.mit.edu/install"/>
       <repository
