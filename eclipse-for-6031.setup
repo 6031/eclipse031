@@ -539,6 +539,8 @@
           name="constellation.feature.feature.group"/>
       <requirement
           name="edu.mit.eecs.javatutor.feature.group"/>
+      <requirement
+          name="edu.mit.eecs.parserlib.edit.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/oxygen"/>
       <repository
@@ -547,6 +549,8 @@
           url="https://constellation.csail.mit.edu/install"/>
       <repository
           url="http://javatutor.csail.mit.edu/"/>
+      <repository
+          url="http://6031.mit.edu/parserlib/eclipse"/>
     </setupTask>
     <description>Eclipse Oxygen for 6.031.</description>
   </version>
