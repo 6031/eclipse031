@@ -544,7 +544,7 @@
       <repository
           url="http://download.eclipse.org/releases/oxygen"/>
       <repository
-          url="http://eclipse-cs.sourceforge.net/update"/>
+          url="https://checkstyle.github.io/eclipse-cs/update"/>
       <repository
           url="https://constellation.csail.mit.edu/install"/>
       <repository
