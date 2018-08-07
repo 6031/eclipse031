@@ -509,9 +509,9 @@
       </detail>
     </annotation>
   </setupTask>
-  <version name="oxygen"
-      label="Oxygen"
-      requiredJavaVersion="1.8">
+  <version name="photon"
+      label="Photon"
+      requiredJavaVersion="10">
     <setupTask
         xsi:type="setup.p2:P2Task"
         excludedTriggers="STARTUP"
@@ -542,7 +542,7 @@
       <requirement
           name="edu.mit.eecs.parserlib.edit.feature.feature.group"/>
       <repository
-          url="http://download.eclipse.org/releases/oxygen"/>
+          url="http://download.eclipse.org/releases/${scope.product.version.name}"/>
       <repository
           url="https://checkstyle.github.io/eclipse-cs/update"/>
       <repository
@@ -552,7 +552,7 @@
       <repository
           url="http://6031.mit.edu/parserlib/eclipse"/>
     </setupTask>
-    <description>Eclipse Oxygen for 6.031.</description>
+    <description>Eclipse Photon for 6.031.</description>
   </version>
   <description>Eclipse with plug-ins and configuration for MIT 6.031 Software Construction.</description>
 </setup:Product>
