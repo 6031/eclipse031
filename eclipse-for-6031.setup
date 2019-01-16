@@ -509,9 +509,9 @@
       </detail>
     </annotation>
   </setupTask>
-  <version name="photon"
-      label="Photon"
-      requiredJavaVersion="10">
+  <version name="2018-12"
+      label="2018-12"
+      requiredJavaVersion="11">
     <setupTask
         xsi:type="setup.p2:P2Task"
         excludedTriggers="STARTUP"
@@ -527,8 +527,6 @@
           name="org.eclipse.egit.feature.group"/>
       <requirement
           name="org.eclipse.jgit.feature.group"/>
-      <requirement
-          name="org.eclipse.recommenders.rcp.feature.feature.group"/>
       <requirement
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
       <requirement
@@ -552,7 +550,7 @@
       <repository
           url="http://6031.mit.edu/parserlib/eclipse"/>
     </setupTask>
-    <description>Eclipse Photon for 6.031.</description>
+    <description>Eclipse ${scope.product.version.label} for 6.031.</description>
   </version>
   <description>Eclipse with plug-ins and configuration for MIT 6.031 Software Construction.</description>
 </setup:Product>
