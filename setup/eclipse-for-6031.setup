@@ -103,12 +103,20 @@
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
+        name="org.eclipse.jdt.junit">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.junit/org.eclipse.jdt.junit.content_assist_favorite_static_members_migrated"
+          value="true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
         name="org.eclipse.jdt.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.ui/content_assist_favorite_static_members"
-          value="org.hamcrest.Matchers.*;org.hamcrest.MatcherAssert.*;org.junit.Assert.*"/>
+          value="org.hamcrest.CoreMatchers.*;org.hamcrest.MatcherAssert.*;org.junit.jupiter.api.Assertions.*;org.junit.jupiter.api.Assumptions.*;org.junit.jupiter.api.DynamicContainer.*;org.junit.jupiter.api.DynamicTest.*"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           excludedTriggers="STARTUP"
