@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="edu.mit.eecs.eclipse031.SplashHandler"
+            id="edu.mit.eecs.eclipse031.splash">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="org.eclipse.platform.ide"
+            splashId="edu.mit.eecs.eclipse031.splash">
+      </splashHandlerProductBinding>
+      <splashHandlerProductBinding
+            productId="org.eclipse.epp.package.java.product"
+            splashId="edu.mit.eecs.eclipse031.splash">
+      </splashHandlerProductBinding>
+   </extension>
+
+</plugin>

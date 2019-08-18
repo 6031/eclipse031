@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#
+# Build Eclipse plug-in and generate update site.
+#
+
+set -e
+
+if [[ ! -d "$ECLIPSE" ]]; then
+  echo "Usage: ECLIPSE=/path/to/eclipse/dir $0"
+  exit 1
+fi
+
+# Find the headless PDE buildfile
+launcher=org.eclipse.equinox.launcher_1.5
+pde_build=org.eclipse.pde.build_3.10
+scripts=({$HOME/.p2/pool/plugins/$pde_build.*,"$ECLIPSE"/plugins/$pde_build.*}/scripts/build.xml)
+found=(${scripts[@]##*\**}) # filter paths with unexpanded wildcard
+buildfile="${found[@]: -1}" # take the last one
+
+# Find and clean the build directory
+BUILD=$(cd `dirname "$0"`/../build && pwd)
+if [[ ! -f "$BUILD/build.properties" ]]; then
+  echo "Missing build.properties"
+  exit 1
+fi
+
+rm -rf "$BUILD/output" && mkdir "$BUILD/output"
+
+# Copy feature & plug-in sources to build output dir
+#  - rename e.g. plugin -> plugins/edu.mit.eecs.eclipse031.plugin
+COPYFILE_DISABLE=1 tar cv -T <(git ls-files -- feature
+                               git ls-files -- plugin) \
+                          -s '%^\(feature\)*\(plugin\)*%~s/edu.mit.eecs.eclipse031.~%' |
+                   tar x -C "$BUILD/output"
+
+# Run the headless PDE build
+java -jar "$ECLIPSE"/plugins/$launcher.*.jar \
+     -data "$BUILD/output/workspace" \
+     -application org.eclipse.ant.core.antRunner \
+     -buildfile "$buildfile" \
+     -Dbuilder="$BUILD" -DbaseLocation="$HOME/.p2/pool" \
+     "$@"
+
+# Fix site name
+sed -i '' -e "/<repository/s/'file:[^']*'/'Eclipse for 6.031'/" "$BUILD"/output/site/*.xml
+
+# Sanity-check the result
+
+echo $'\n'Versions:
+"`dirname "$0"`/version"
+
+echo $'\n'Contents:
+for jar in "$BUILD"/output/site/*/*.jar; do
+  echo $jar
+  unzip -qql "$jar" | awk '{ print $4 }' | grep -v '/$' | sort
+done

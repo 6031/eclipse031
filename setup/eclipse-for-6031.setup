@@ -25,6 +25,15 @@
         source="http://www.eclipse.org/oomph/setup/UserPreferences"/>
     <setupTask
         xsi:type="setup:CompoundTask"
+        name="edu.mit.eecs.eclipse031.plugin">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
+          key="/instance/edu.mit.eecs.eclipse031.plugin/preferencesSet"
+          value="true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
         name="org.eclipse.jdt.core">
       <setupTask
           xsi:type="setup:PreferenceTask"
@@ -532,6 +541,8 @@
       <requirement
           name="org.eclipse.ui.views.log"/>
       <requirement
+          name="edu.mit.eecs.eclipse031.feature.feature.group"/>
+      <requirement
           name="net.sf.eclipsecs.feature.group"/>
       <requirement
           name="constellation.feature.feature.group"/>
@@ -541,6 +552,8 @@
           name="edu.mit.eecs.parserlib.edit.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/${scope.product.version.name}"/>
+      <repository
+          url="http://6031.mit.edu/eclipse031"/>
       <repository
           url="https://checkstyle.github.io/eclipse-cs/update"/>
       <repository

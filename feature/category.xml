@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/edu.mit.eecs.eclipse031.feature_1.0.0.qualifier.jar" id="edu.mit.eecs.eclipse031.feature" version="1.0.0.qualifier">
+      <category name="edu.mit.eecs.eclipse031.category"/>
+   </feature>
+   <category-def name="edu.mit.eecs.eclipse031.category" label="Eclipse for 6.031"/>
+</site>
