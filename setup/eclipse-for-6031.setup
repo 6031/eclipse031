@@ -501,7 +501,7 @@
         <value>
           &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
           &lt;checkstyle-configurations file-format-version=&quot;5.0.0&quot; default-check-configuration=&quot;6.031 Caesar&quot;>
-            &lt;check-configuration name=&quot;6.031 Caesar&quot; location=&quot;https://raw.githubusercontent.com/rcmiller/caesar-at-mit/master/preprocessor/checks.xml&quot; type=&quot;remote&quot; description=&quot;Configuration used for 6.031 code reviewing.&quot;>
+            &lt;check-configuration name=&quot;6.031 Caesar&quot; location=&quot;http://caesar.csail.mit.edu/static/checks.xml&quot; type=&quot;remote&quot; description=&quot;Configuration used for 6.031 code reviewing.&quot;>
               &lt;additional-data name=&quot;cache-file&quot; value=&quot;false&quot;/>
             &lt;/check-configuration>
           &lt;/checkstyle-configurations>
