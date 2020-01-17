@@ -41,8 +41,8 @@ public class SplashHandler extends EclipseSplashHandler {
         Label overlay = new Label(this.getContent(), SWT.NONE);
         overlay.setImage(image);
         Rectangle bounds = image.getBounds();
-        // overlaying org.eclipse.platform_4.12.0.v20190605-1800/splash.bmp
-        overlay.setBounds(178, 90, bounds.width, bounds.height);
+        // overlaying org.eclipse.epp.package.common_4.14.0.20191212-1200/splash.bmp
+        overlay.setBounds(134, 90, bounds.width, bounds.height);
         
         getWorkbench().addWindowListener(new IWindowListener() {
             public void windowOpened(IWorkbenchWindow window) { }
