@@ -526,9 +526,9 @@
       </detail>
     </annotation>
   </setupTask>
-  <version name="2019-06"
-      label="2019-06"
-      requiredJavaVersion="12">
+  <version name="2019-12"
+      label="2019-12"
+      requiredJavaVersion="13">
     <setupTask
         xsi:type="setup.p2:P2Task"
         excludedTriggers="STARTUP"
