@@ -463,6 +463,10 @@
           excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui/showIntro"
           value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui/SHOW_MEMORY_MONITOR"
+          value="false"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
