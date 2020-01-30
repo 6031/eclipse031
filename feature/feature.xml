@@ -2,7 +2,7 @@
 <feature
       id="edu.mit.eecs.eclipse031.feature"
       label="Eclipse for 6.031"
-      version="1.0.0.qualifier">
+      version="1.1.0.qualifier">
 
    <description>
       Eclipse for 6.031
@@ -38,6 +38,20 @@ THE SOFTWARE.
 
    <plugin
          id="edu.mit.eecs.eclipse031.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.junit.jupiter.api.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.junit.jupiter.params.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
