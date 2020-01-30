@@ -106,6 +106,7 @@
         name="org.eclipse.jdt.junit">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.jdt.junit/org.eclipse.jdt.junit.content_assist_favorite_static_members_migrated"
           value="true"/>
     </setupTask>
@@ -465,6 +466,7 @@
           value="false"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="STARTUP"
           key="/instance/org.eclipse.ui/SHOW_MEMORY_MONITOR"
           value="false"/>
     </setupTask>
