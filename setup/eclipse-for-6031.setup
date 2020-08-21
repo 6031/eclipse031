@@ -524,7 +524,7 @@
         <value>
           &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
           &lt;checkstyle-configurations file-format-version=&quot;5.0.0&quot; default-check-configuration=&quot;6.031 Caesar&quot;>
-            &lt;check-configuration name=&quot;6.031 Caesar&quot; location=&quot;https://caesar.csail.mit.edu/static/checks.xml&quot; type=&quot;remote&quot; description=&quot;Configuration used for 6.031 code reviewing.&quot;>
+            &lt;check-configuration name=&quot;6.031 Caesar&quot; location=&quot;https://caesar.mit.edu/static/checks.xml&quot; type=&quot;remote&quot; description=&quot;Configuration used for 6.031 code reviewing.&quot;>
               &lt;additional-data name=&quot;cache-file&quot; value=&quot;false&quot;/>
             &lt;/check-configuration>
           &lt;/checkstyle-configurations>
@@ -532,9 +532,9 @@
       </detail>
     </annotation>
   </setupTask>
-  <version name="2019-12"
-      label="2019-12"
-      requiredJavaVersion="13">
+  <version name="2020-06"
+      label="2020-06"
+      requiredJavaVersion="14">
     <setupTask
         xsi:type="setup.p2:P2Task"
         excludedTriggers="STARTUP"
@@ -571,7 +571,7 @@
       <repository
           url="https://checkstyle.github.io/eclipse-cs/update"/>
       <repository
-          url="https://constellation.csail.mit.edu/install"/>
+          url="https://constellation.mit.edu/install"/>
       <repository
           url="https://javatutor.mit.edu/"/>
       <repository
