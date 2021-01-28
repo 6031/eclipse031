@@ -532,9 +532,9 @@
       </detail>
     </annotation>
   </setupTask>
-  <version name="2020-06"
-      label="2020-06"
-      requiredJavaVersion="14">
+  <version name="2020-12"
+      label="2020-12"
+      requiredJavaVersion="15">
     <setupTask
         xsi:type="setup.p2:P2Task"
         excludedTriggers="STARTUP"
